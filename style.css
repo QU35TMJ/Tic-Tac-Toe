@@ -1,0 +1,103 @@
+*, ::before, ::after{
+    box-sizing: border-box; 
+}
+
+:root{
+    --grid-size: 160px;
+    --btn-size: 22px;
+    --btn-color: coral;
+
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: lavender;
+}
+.header{
+    font-size: 36px;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 120px;
+    margin-left: 10px;
+   
+}
+.form{
+    font-size: 30px;
+    margin-right: 100px;    
+}
+
+.form label{
+    display: block;
+    padding-bottom: 10px;
+    padding-top: 15px;
+}
+.form input{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.form button{
+    margin:15px 0 0 105px ;
+    display: block;
+    font-size:var(--btn-size);
+    border-radius: 5px;
+    
+}
+.board{
+    width: 70;
+    height: 90;
+    display:grid;
+    grid-template-columns: repeat(3,auto);
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+}
+#grid{
+    width: var(--grid-size);
+    height: var(--grid-size);
+    border: 1px solid black;
+    background-color: darkgrey;
+}
+.scores{
+    position: relative;
+    margin-left: 100px;
+    margin-top: -20px;  
+
+}
+.scores h4, h3{
+    font-size: 32px;
+}
+.scores h3{
+    font-weight: lighter;
+}
+.scores button{
+    border-radius: 5px;
+    font-size: var(--btn-size);
+}
+button{
+    background-color: var(--btn-color);
+}
+button:hover{
+    color: white;
+}
+
+#grid:first-child, #grid:nth-child(2), #grid:nth-child(3){
+    border-top: none;
+}
+#grid:nth-child(3n+1){
+    border-left: none;
+}
+#grid:nth-child(3n+3){
+    border-right: none;
+}
+#grid:last-child, #grid:nth-child(7), #grid:nth-child(8){
+    border-bottom: none;
+}

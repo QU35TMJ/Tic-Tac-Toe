@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css"> 
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <h2 class="header">Tic Tac Toe</h2>
+ <main>
+     <form class="form">
+         <h3>Enter Your Name</h3>
+         <label>Player 1:</label>
+         <input type="text" id="name1" required>
+         <label>Player 2:</label>
+         <input type="text" id="name2" required>
+         <button type="submit" class="startbtn">Start</button>
+     </form>
+    <div id="board" class="board">
+        <div id="grid" data-item="0"></div>
+        <div id="grid" data-item="1"></div>
+        <div id="grid" data-item="2"></div>
+        <div id="grid" data-item="3"></div>
+        <div id="grid" data-item="4"></div>
+        <div id="grid" data-item="5"></div>
+        <div id="grid" data-item="6"></div>
+        <div id="grid" data-item="7"></div>
+        <div id="grid" data-item="8"></div>
+    </div>
+    <div class="scores">
+        <h4>Scores</h4>
+        <h3>Player1:<span id="p1score">0</span></h3>
+        <h3>Player2:<span id="p2score">0</span></h3>
+        <button id="resetbtn">Restart</button>
+    </div>
+ </main>
+ <footer></footer>
+   
+
+    
+ <script src="app.js"></script>
+</body>
+</html>
