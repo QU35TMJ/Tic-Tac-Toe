@@ -106,7 +106,7 @@ const ResultCheck = (function(){
     return {result};
 
 })();
-/*
+
 form.addEventListener('submit', (e)=>{
     playerOne = document.getElementById('name1').value;
     playerTwo = document.getElementById('name2').value;
@@ -130,4 +130,3 @@ const gameRestart = (function(){
 restartButton.addEventListener('click', ()=>{
     gameRestart.restart();
 });
-*/
