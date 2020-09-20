@@ -31,7 +31,7 @@ const Player = (name, mark) => {
     return{getName, getMark, placeMark};
 };
 
-/*
+
 const DisplayController = (function(){
     const renderGameboard = () =>{
         for(let i=0;i<Gameboard.gameboard.length;i++){
@@ -66,7 +66,7 @@ const Game = (function(){
     return {Play};
 })();
 
-
+/*
 const ResultCheck = (function(){
     const result = () =>{
         const board = Gameboard.gameboard;
