@@ -1,5 +1,5 @@
 const grid = document.querySelectorAll('#grid');
-const form = document.getElementsByTagName('form')[0];
+const form = document.querySelector('.form');
 const restartButton = document.querySelector('.resetbtn');
 const startButton = document.querySelector('.startbtn');
 const player1_score = document.getElementById('p1score');
@@ -107,12 +107,14 @@ const ResultCheck = (function(){
 
 })();
 
-form.addEventListener('submit', (e)=>{
+form.addEventListener('submit',startGame);
+
+function startGame (e){
     playerOne = document.getElementById('name1').value;
     playerTwo = document.getElementById('name2').value;
     grid.forEach(element => {element.style.pointerEvents = 'auto';});
     Game.Play();
-})
+}
 
 const gameRestart = (function(){
     let restart = ()=>{
@@ -121,7 +123,6 @@ const gameRestart = (function(){
         // clear form input
         document.getElementById('name1').value = '';
         document.getElementById('name2').value = '';
-
     }
     return{restart};
 
