@@ -66,7 +66,7 @@ const Game = (function(){
     return {Play};
 })();
 
-/*
+
 const ResultCheck = (function(){
     const result = () =>{
         const board = Gameboard.gameboard;
@@ -106,7 +106,7 @@ const ResultCheck = (function(){
     return {result};
 
 })();
-
+/*
 form.addEventListener('submit', (e)=>{
     playerOne = document.getElementById('name1').value;
     playerTwo = document.getElementById('name2').value;
